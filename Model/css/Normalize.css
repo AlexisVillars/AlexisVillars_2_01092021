@@ -1,0 +1,60 @@
+
+/* Normalize
+   ========================================================================== 
+*/
+
+   *{
+     margin-top:0px;
+     font-family:Raleway, sans serif;
+     
+  }
+  
+  .wrap
+  {
+      width: 800px;
+      margin: auto;
+  }
+  
+  .flex{
+      display: flex;
+  }
+  
+  html {
+    line-height: 1.15; 
+  }
+  
+  body {
+    margin: 5px;
+  }
+  
+  main {
+    display: block;
+  }
+  
+  ul{
+      list-style: none;
+  }
+  
+  
+  h1 {
+    font-size: 1.6em;
+  }
+  
+  a {
+    background-color:transparent;
+    text-decoration: none;
+  }
+
+  strong {
+    font-weight: bolder;
+  }
+  
+  img {
+    border-style: none;
+  }
+
+  ol {
+      list-style: none;
+  }
+  
+  
