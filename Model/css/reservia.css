@@ -16,6 +16,7 @@ header {
 	align-items: center;
 	justify-content: space-between;
 	height: 65px;
+    margin-top: 0px;
 }
 
 h1 {
@@ -30,29 +31,32 @@ h2 {
     width: 40%;
 }
 
-header nav {
-	height: 100%;
-    margin-bottom: 10px;
+.LinkLogo{
+    max-width: 100%;
 }
 
+header nav{
+    height: 100%;
+}
 
 .menu {
 	display: flex;
 	flex-flow: row wrap;
 	height: 100%;
     padding-left: 0px;
+    margin:0;
 }
 
 .menu a {
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
-	height: 105%;
 	color:#3f3f3f;
 	text-decoration: none;
 	padding: 0 2em;
 	border-top: 3px #ffffff solid;
 	font-size: 1.2em;
+    height: 100%;
 }
 
 .menu a.signup {
@@ -86,16 +90,18 @@ H1{
      font-size: 1.15em; 
  }
  
+
+
 .search form{
     height: 60px;
     width: 35%;
-    min-width: 500px;
+
  }
 
  .locationIconBox{
      background-color:  #F2F2F2;
      width: 11%;
-     min-width: 60px;
+
      border-radius: 16px 0px 0px 16px;
      text-align: center;
   }
@@ -122,7 +128,6 @@ H1{
  .largeScreenButton{
      font-size: 1.2em;
      width: 28%;
-     min-width: 117px;
      border: none;
      background-color:#0065FC;
      border-radius: 0px 16px 16px 0px;
@@ -134,7 +139,6 @@ H1{
     display: none;
     font-size: 1em;
     width: 60px;
-    min-width: 55px;
     border: none;
     background-color:#0065FC;
     border-radius: 16px 16px 16px 16px;
@@ -145,7 +149,6 @@ H1{
     
 .filters{
      
-     height: max-content;
      width: 100%;
      margin: auto;
      margin-top: 20px;
@@ -155,15 +158,15 @@ H1{
 }
 
 .filters ul{
-    width: 65%;
+    width: 80%;
     justify-content: space-between;
     margin-left: 10px;
     flex-wrap: nowrap;
+    display: flex;
 }
 
 .filters ul li{
     height: 50px;
-    min-width:max-content;
     align-items: center;
     display: flex;
     border: 3px solid #F2F2F2;
@@ -218,18 +221,15 @@ H1{
 
 /* hosting section */
 #hosting{
-    height: 800px;
     margin: auto;
     justify-content: space-between;
 }
 
 .hostingMarseille{
     width: 65%;
-    height: 700px;
     border: transparent hidden 0px;
     background-color: #F2F2F2;
     border-radius: 30px;
-    min-height: 680px;
 }
 
 #hosting H3{
@@ -237,61 +237,62 @@ H1{
     margin: 40px 0 40px 40px;
 }
 
-.hostingMarseille div {
+.boxarticle{
     width: 90%;
-    height: 74%;
     margin: auto;
     flex-wrap: wrap;
     justify-content: space-between;
 }
 
+.boxarticle a{
+    padding: 5px;
+
+}
+
+
 .hostingMarseille div a {
-    height: 40%;
     width: 31%;
     border: transparent hidden 0px;
     background-color: white;
     border-radius: 20px;
     box-shadow: 0px 0px 10px rgb(182, 182, 182);
-    max-width: 400px;
     overflow: hidden;
+    height: 100%;
+    margin-bottom: 15px;
 }
 
-.hostingMarseille article{
-    flex-direction: column;
+.boximg {
+    height: 10em;
+}
+
+.boximg img{
+    height: 100%;
     width: 100%;
-}
-
-.hostingMarseille img{
-    display: block;
-    width: 95%;
-    height: 110px;
     object-fit :cover;
-    border-radius: 14px 14px 0px 0px;
-    margin: auto;
-    margin-top: 5px;
+    border-radius: 15px 15px 0px 0px;
 }
 
 #hosting .hostingMarseille div H4{
-    text-align: left;
     color: black;
     width: 88%;
     margin: auto;
     margin-top: 8px;
 }
 
-#hosting p{
+#hosting div div a article p{
+    color:black;
     width: 88%;
     margin: auto;
-    padding-top: 4px;
-    color: black;
-    font-size: 0.85em;
+    padding: 5px;
 }
 
-.hostingMarseille article div{
-    width: 88%;
-    margin: auto;
-    margin-top: 5px;
+
+#hosting div div a article .boxetoile{
+    margin-left: 15px;
+    margin-bottom: 5px;
 }
+
+
 
 .blueStar{
     color: #0065FC;
@@ -303,25 +304,24 @@ H1{
     font-size: 0.8em;
 }
 
-#hosting p{
-    width: 88%;
-    margin: auto;
-    margin-top: 5px;
-}
-
 #hosting p a{
     font-weight: bold;
     color: black;
     font-size: 1.3em;
+    margin-left: 20px;
+}
+
+.showMore{
+    color: black;
+    font-size: 0.85em;
+    margin: 10px 10px 10px 20px;
 }
 
 .popular{
     width: 32%;
-    height: 700px;
     border: transparent hidden 0px;
     background-color: #F2F2F2;
     border-radius: 30px;
-    min-width: 332px;
 }
 
 .title{
@@ -342,31 +342,35 @@ H1{
 .cards{
     flex-direction: column;
     width: 80%;
-    height: 80%;
     justify-content: space-between;
     margin: auto;
 }
 
+.boximgpopular {
+    width: 40%;
+    height: 10em;
+}
+
+.boximgpopular img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 15px 0 0 15px;
+}
+
 .cards a{
-    height: 30%;
     width: 100%;
     border: transparent hidden 0px;
     background-color: white;
     border-radius: 20px;
     box-shadow: 0px 0px 10px rgb(182, 182, 182);
+    margin-bottom: 15px;
 }
 
 .cards article{
     width: 98%;
     justify-content: flex-start;
-}
-
-.cards img{
-    width: 37%;
-    height: 158px;
-    object-fit :cover;
-    border-radius: 14px 0px 0px 14px;
-    margin: 5px 0px 0px 5px;
+    padding: 5px;
 }
 
 .cardDescription{
@@ -382,7 +386,6 @@ H1{
 }
 
 .cardDescription p{
-    height: 40%;
     font-size: 0.85em;
 }
 
@@ -396,118 +399,75 @@ H1{
 
 /* activities section */
 
-#activities{
-    height: 620px;
+#activites{
+    margin: 0 0 3em;
+    display: grid;
+    grid-column: 1/3;
 }
 
-#activities H3{
+#activites h2{
     font-size: 1.5em;
     margin-top: 20px;
+    font-weight: bold;
 }
 
-
-.activityCards{
-    width: 100%;
-    justify-content: space-between;
-    flex-wrap: wrap; 
+#activites ul {
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: repeat(5,5em);
+    gap: 2.5em;
+    padding-left: 0px;
 }
 
-.linkLargecard{
-    display: block;
-    height: 480px;
-    width: 20%;
-    border: transparent hidden 0px;
-    background-color: rgb(255, 255, 255);
-    border-radius: 20px;
-    box-shadow: 0px 0px 10px rgb(224, 224, 224);
+#activites ul .carte-type1 {
+    grid-row: 1/6;
 }
 
-.largeImg{
-    width: 100%;
-    height: 420px;
-    object-fit :cover;
-    border-radius: 14px 14px 0px 0px;
+#activites ul .carte-type2 {
+    grid-row: 1/4;
 }
 
-#activities h4{
-    color: black;
-    margin-top: 20px;
-    height: 20px;
-    margin-left: 15px;
+#activites ul .carte-type3 {
+    grid-row: 4/6;
 }
 
-.littleCards{
-    width: 20%;
+#activites ul .carte-type4 {
+    grid-row: 1/3;
+}
+
+#activites ul .carte-type5 {
+    grid-row: 3/6;
+}
+
+#activites ul li a {
+    display: flex;
     flex-direction: column;
-    justify-content: space-between;
-}
-
-.linkFort{
-    display: block;
-    height: 235px;
-    width: 100%;
-    border: transparent hidden 0px;
-    background-color: rgb(255, 255, 255);
+    height: 100%;
     border-radius: 20px;
-    box-shadow: 0px 0px 10px rgb(224, 224, 224);
+    background-color: white;
+    box-shadow: 0 0 10px rgb(0,0,0,0.2);
+    transition: all 0.3s;
 }
 
-.pomeguesImg{
+#activites ul li a img{
     width: 100%;
-    height: 170px;
-    object-fit :cover;
-    border-radius: 14px 14px 0px 0px;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 15px 15px 0 0;
+    overflow: hidden;
 }
 
-.linkFrioul{
-    display: block;
-    height: 180px;
-    width: 100%;
-    border: transparent hidden 0px;
-    background-color: rgb(255, 255, 255);
-    border-radius: 20px;
-    box-shadow: 0px 0px 10px rgb(224, 224, 224);
+#activites a h3 {
+    padding: 10px;
+    margin: 0px;
+    color: black;
 }
 
-.frioulImg{
-    width: 100%;
-    height: 120px;
-    object-fit :cover;
-    border-radius: 14px 14px 0px 0px;
+#activites a:hover,
+#activites a:hover h3 {
+    color:#0065FC;
 }
 
-.linkNotredame{
-    display: block;
-    height: 190px;
-    width: 100%;
-    border: transparent hidden 0px;
-    background-color: rgb(255, 255, 255);
-    border-radius: 20px;
-    box-shadow: 0px 0px 10px rgb(224, 224, 224);
-}
-
-.notredameImg{
-    width: 100%;
-    height: 130px;
-    object-fit :cover;
-    border-radius: 14px 14px 0px 0px;
-}
-
-.linkParc{
-    display: block;
-    height: 230px;
-    width: 100%;
-    background-color: rgb(255, 255, 255);
-    border-radius: 20px;
-    box-shadow: 0px 0px 10px rgb(224, 224, 224);
-}
-
-.parcImg{
-    width: 100%;
-    height: 170px;
-    object-fit :cover;
-    border-radius: 14px 14px 0px 0px;
-}
 
 /* hover article animation */
 #hosting div div a:hover {
@@ -520,7 +480,7 @@ H1{
     transition-duration: 0.5s;
 }
 
-#activities a:hover {
+#activites a:hover {
     transform: scale(1.05);
     transition-duration: 0.5s;
 }
@@ -531,21 +491,17 @@ H1{
 
 /* footer */
 footer{
-    width: 100%;
-    height: 250px;
     background-color: #F2F2F2;
     padding: 0 2.5em;
 }
 
-.footer{
+footer div{
     width: 100%;
-    height: 100%;
     margin-top: 50px;
 }
 
 footer div section{
     width: 30%;
-    height: 100%;
 }
 
 h5{
@@ -569,8 +525,16 @@ footer a :hover{
 
 @media (max-width: 1280px) {
     header{
-        width: 98%;
         margin: auto;
+    }
+
+    .LinkLogo {
+        max-width: 24%;
+    }
+
+    .reserviaLogo {
+        width: 60%;
+        
     }
 
     .search{
@@ -598,26 +562,22 @@ footer a :hover{
     #hosting{
         flex-direction: column-reverse;
         width: 100%;
-        height: 1500px;
         justify-content: space-between;
     }
 
     .hostingMarseille {
-        height: 500px;
         margin: auto;
         width: 100%;
+        margin-top: 20px;
     }
 
     #activities h3{
         margin-top: 40px;
     }
 
-    .hostingMarseille a{
-        max-height: 200px;
-    }
+
 
     .popular{
-        height: 700px;
         width: 100%;
         margin: auto;
     }
@@ -630,48 +590,8 @@ footer a :hover{
         width: 88%;
     }
 
-    #activities{
-        width: 100%;
-    }
 
-    .activityCards {
-        display: flex;
-        justify-content: space-between;
-        height: 600px;
-        align-items: baseline;
-    }
-
-    .linkLargecard{
-        height: 255px;
-        width: 28%; 
-    }
-
-    .littleCards{
-       flex-direction: row;
-       width: 65%;
-       height: 255px;
-       justify-content: space-between;
-    }
-
-    .activityCards article{
-        box-sizing: border-box;
-    }
-
-    .linkLargecard img{
-        height: 190px;
-        width: 100%;
-    }
-
-    .activityCards div a{
-        height: 255px;
-        width: 45%;
-    }
-
-    .activityCards div a img{
-        height: 190px;
-    } 
-
-    .footer{
+    footer div{
         width: 95%;
         justify-content: space-between;
     }
@@ -683,11 +603,16 @@ footer a :hover{
 		padding: 0 0 2em;
 		position: relative;
 		flex-flow: row wrap;
-		height: auto;
+        height: 100%;
 	}
 
+    .LinkLogo {
+        max-width: 30%;
+        margin-left: 10px;
+    }
+
     .reserviaLogo{
-        width: 30%;
+        width: 80%;
     }
 
     main{
@@ -737,7 +662,6 @@ footer a :hover{
 		top: 1.4em;
 		color: #0065FC;
 		justify-content: flex-start;
-		height: auto;
 		border: none;
 	}
 
@@ -752,7 +676,7 @@ footer a :hover{
 	}
 
     .search{
-        width: 93%;
+        width: 95%;
         margin: auto;
     }
 
@@ -768,75 +692,76 @@ footer a :hover{
         flex-wrap: wrap;
     }
 
-    #hosting{
-        height: 1700px;
-    }
-
-    .hostingMarseille{
-        height: 900px;
-    }
-
-    .hostingMarseille div{
-        height: 80%;
-    }
 
     .hostingMarseille div a{
-        height: 200px;
-        width: 48%;
-    }
-
-    #activities{
-        height: 1200px;
-        width: 98%;
-        margin: auto;
-    }
-
-    .activityCards{
-        
-        height: 1200px;
-        justify-content: space-between;
-    }
-
-    .linkLargecard{
         width: 100%;
     }
 
-    .littleCards{
+    #hosting div div a article .boxetoile {
+        margin-left: 30px;
+        margin-bottom: 5px;
+    }
+
+    #activites{
+        grid-column: 1/3;
+    }
+
+    #activites ul{
+        grid-template-columns: repeat(2,1fr);
+        grid-template-rows: repeat(3,10em);
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    #activites ul .carte-type1,
+    #activites ul .carte-type2,
+    #activites ul .carte-type3,
+    #activites ul .carte-type4,
+    #activites ul .carte-type5 {
+        grid-row: auto;
+    }
+
+    #activites h2 {
+        margin-top: 20px;
+        margin-left: 20px;
+    }
+
+    footer {
+        padding: 0 10px;
+    }
+
+    footer div section {
+        width: 33%;
+        text-align: center;
+    }
+
+    footer div {
         width: 100%;
     }
 
-    .activityCards div a{
-        width: 48%;
+    footer div section h5{
+        font-size: 1em;
     }
-
-    .footer section{
-        width: 29%;
+    footer div section a p {
+        margin-bottom: 10px;
     }
 }
 
 @media (max-width: 490px) {
 
-    section{
-        min-width: 350px;
-    }
+
 
     .filters{
         flex-direction: column;
         align-items: flex-start;
-        height: 230px;
     }
     .filters ul {
         align-items: flex-start;
         width: 100%;
-        height: 430px;
-        min-width: 385px;
         text-align: left;
         margin:0;
         padding:0;
-    }
-
-    #hosting{
-        height: 2200px;
+        display: flex;
     }
 
     #hosting h3{
@@ -844,24 +769,26 @@ footer a :hover{
     }
 
     .hostingMarseille{
-        height: 1500px;
         background-color: white;
     }
     
     .hostingMarseille div{
-        height: 90%;
         width: 100%;
         justify-content: space-around;
         margin: auto;
     }
 
+    #hosting div div a article .boxetoile {
+        margin-left: 25px;
+    }
+
     .hostingMarseille div a{
-        width: 93%;
-        max-width: unset;
+        width: 100%;
+        
     }
 
     .hostingMarseille div a img {
-        width: 97%;
+        width: 100%;
     }
 
     .popular{
@@ -876,45 +803,27 @@ footer a :hover{
         width: 35px;
     }
 
-    #activities h3{
-        margin-left: 0.55em;
+    #hosting p a {
+        margin-left: 0px;
     }
 
-    #activities{
-        height: 1750px;
-    }
-
-    .activityCards{
-        height: 1720px;
-        justify-content: space-between;
-    }
-
-    .linkLargecard{
-        width: 93%;
-        margin: auto;
-    }
-
-    .littleCards{
-        width: 100%;
-        flex-direction: column;
-        height: 575px;
-        justify-content:space-between;
-    }
-
-    .activityCards div a{
-        width: 93%;
-        margin: auto;
-    }
-
-    footer{
-        height: 530px;
+    #activites ul{
+        grid-template-columns: 1fr;
+        grid-template-rows: 10em 10em 10em 10em 10em 10em;
+        gap: 2.5;
     }
     
-    .footer {
+    footer div{
         flex-direction: column;
-        height: 520px;
         text-align: left;
     }
+
+    footer div section {
+        width: 100%;
+        text-align: left;
+    }
+
+
 }
 
      /*end medias queries*/
